@@ -1,0 +1,37 @@
+{
+  "name": "Brave Date",
+  "description": " The ultimate Tinder clone built with React, MUI, Redux, and friends.",
+  "keywords": [
+      "tinder",
+      "dating",
+      "brave date",
+      "privacy",
+      "messaging",
+      "message"
+  ],
+  "repository": "https://github.com/brave-date/brave-date",
+  "buildpacks": [
+      {
+        "url": "heroku/nodejs"
+      }
+  ],
+  "env": {
+    "REACT_APP_SERVER_URL": {
+      "description": "Your deployed server APIs url",
+      "value": "APP_SERVER_URL",
+      "required": true
+    },
+    "REACT_APP_SOCKET_URL": {
+      "description": "Your deployed server Sockets url",
+      "value": "APP_SOCKET_URL",
+      "required": true
+    }
+  },
+  "formation": {
+      "web": {
+          "quantity": 1,
+          "size": "free"
+    }
+  },
+    "stack": "heroku-22"
+}
